@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Print Optimization Styles for Academic Papers */
+  @media print {
+    @page {
+      size: A4 portrait;
+      margin: 25mm 20mm 25mm 25mm;
+    }
+
+    body {
+      background-color: white !important;
+      color: black !important;
+      font-family: 'Times New Roman', Times, serif !important;
+      font-size: 12pt !important;
+      line-height: 1.5 !important;
+    }
+
+    header,
+    footer,
+    nav,
+    button,
+    input,
+    select,
+    .no-print {
+      display: none !important;
+    }
+
+    main {
+      padding: 0 !important;
+      margin: 0 !important;
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+
+    .academic-sheet {
+      border: none !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      width: 100% !important;
+    }
+
+    .chapter-break {
+      page-break-before: always;
+      break-before: page;
+    }
+
+    .avoid-break {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    /* Hanging indent for standard citations in print */
+    .citation-hanging {
+      padding-left: 1.25cm !important;
+      text-indent: -1.25cm !important;
+      margin-bottom: 0.5cm !important;
+      text-align: justify !important;
+    }
+  }
+}

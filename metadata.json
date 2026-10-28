@@ -1,0 +1,6 @@
+{
+  "name": "CendekiaKTI - Asisten Riset & Proposal Ilmiah Siswa",
+  "description": "Platform riset ilmiah siswa & mahasiswa: pencarian literatur jurnal seperti Google Scholar, pembimbing & pembuat proposal KTI dengan AI, serta manajer sitasi ilmiah.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
